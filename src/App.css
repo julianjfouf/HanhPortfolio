@@ -1,0 +1,263 @@
+/* 
+All CSS 
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Allura&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* 
+Navigation CSS 
+*/
+
+.nav-link {
+  position: relative;
+  color: white;
+  transition: all 300ms ease;
+}
+
+.nav-link:hover {
+  color: #646cff;
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #646cff;
+  width: 100%;
+  height: 1px;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 300ms ease;
+}
+
+.nav-link:hover::before {
+  transform-origin: bottom left;
+  transform: scaleX(1);
+}
+
+.nav-logo {
+  position: relative;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.nav-logo:hover {
+  color: #646cff;
+}
+
+.nav-logoImg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  visibility: hidden;
+  opacity: 0;
+  height: 50px;
+  object-fit: contain;
+  border-radius: 999999px;
+  transition: all 300ms ease;
+}
+
+.nav-logo:hover .nav-logoImg {
+  transform: translate(-50%, 50%);
+  visibility: visible;
+  opacity: 1;
+}
+
+.nav-audio {
+  transition: all 300ms ease;
+}
+
+.nav-audio:hover {
+  color: #646cff;
+}
+
+/* Scrollbar width */
+::-webkit-scrollbar {
+  width: 8px;
+  display: none;
+  visibility: hidden;
+  position: fixed;
+}
+
+/* Scrollbar Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Scrollbar Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Scrollbar Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/*
+Main CSS
+*/
+
+.mouse-scroll {
+  animation: infinite 1500ms scroll ease;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(14px);
+  }
+  0% {
+    transform: translateY(0px);
+  }
+}
+
+/* 
+Projects CSS 
+*/
+
+.title {
+  transition: all 300ms ease;
+}
+
+.title::after {
+  transition: all 300ms ease;
+  animation: infinite typing linear;
+  animation-duration: 5000ms;
+  content: "";
+}
+
+@keyframes typing {
+  0% {
+    content: "";
+  }
+  10% {
+    content: "p";
+  }
+  20% {
+    content: "pr";
+  }
+  30% {
+    content: "pro";
+  }
+  40% {
+    content: "proj";
+  }
+  50% {
+    content: "proje";
+  }
+  60% {
+    content: "projec";
+  }
+  70% {
+    content: "project";
+  }
+  80% {
+    content: "projects";
+    color: #646cff;
+  }
+  82.5% {
+    content: "project";
+  }
+  85% {
+    content: "projec";
+  }
+  87.5% {
+    content: "proje";
+  }
+  90% {
+    content: "proj";
+  }
+  92.5% {
+    content: "pro";
+  }
+  95% {
+    content: "pr";
+  }
+  97.5% {
+    content: "p";
+  }
+  100% {
+    content: "";
+  }
+}
+
+.project {
+  transition: all 300ms ease;
+}
+
+.project-text {
+  transition: all 300ms ease;
+  color: white;
+}
+
+.project-image {
+  border-radius: 12px;
+  opacity: 0.2;
+  height: 100%;
+  object-fit: contain;
+  transition: all 300ms ease;
+}
+
+.project:hover .project-text,
+.project:hover .project-link {
+  color: #646cff !important;
+}
+
+.project:hover .project-link {
+  animation: infinite 750ms pop linear;
+}
+
+.project:hover .project-image {
+  transform: scale(1.1);
+  opacity: 0.1;
+}
+
+.project-link {
+  color: white;
+  transition: all 300ms ease;
+}
+
+@keyframes pop {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(12.5deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-12.5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.bItem {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  border-top-right-radius: 50px;
+}
+
+.bItem:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
