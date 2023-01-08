@@ -13,7 +13,7 @@ const Footer = () => {
     >
       <p style={{ textAlign: "center" }}>
         All footage and assets used are personally owned. <br />
-        &copy; All rights reserved.
+        &copy; All rights reserved | Website Created by Julian Jfouf
       </p>
     </div>
   );
