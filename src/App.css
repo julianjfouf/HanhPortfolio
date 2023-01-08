@@ -135,60 +135,61 @@ Projects CSS
   animation: infinite typing linear;
   animation-duration: 5000ms;
   content: "";
+
 }
 
 @keyframes typing {
   0% {
-    content: "";
+    content: "|";
   }
   10% {
-    content: "p";
+    content: "p|";
   }
   20% {
-    content: "pr";
+    content: "pr|";
   }
   30% {
-    content: "pro";
+    content: "pro|";
   }
   40% {
-    content: "proj";
+    content: "proj|";
   }
   50% {
-    content: "proje";
+    content: "proje|";
   }
   60% {
-    content: "projec";
+    content: "projec|";
   }
   70% {
-    content: "project";
+    content: "project|";
   }
   80% {
-    content: "projects";
+    content: "projects|";
     color: #646cff;
   }
   82.5% {
-    content: "project";
+    content: "project|";
   }
   85% {
-    content: "projec";
+    content: "projec|";
   }
   87.5% {
-    content: "proje";
+    content: "proje|";
   }
   90% {
-    content: "proj";
+    content: "proj|";
   }
   92.5% {
-    content: "pro";
+    content: "pro|";
   }
   95% {
-    content: "pr";
+    content: "pr|";
   }
   97.5% {
-    content: "p";
+    content: "p|";
   }
   100% {
-    content: "";
+    content: "|";
   }
 }
 
