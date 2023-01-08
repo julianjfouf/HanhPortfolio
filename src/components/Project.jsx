@@ -40,7 +40,7 @@ const Project = ({
               alignItems: "center",
               flexDirection: "column",
               gap: "60px",
-              textAlign: "center"
+              textAlign: "center",
             }}
           >
             <h1>{number}</h1>
@@ -54,7 +54,7 @@ const Project = ({
           >
             <img
               className="project-image"
-              src={playing ? video : image}
+              src={playing ? image : image}
               alt=""
             />
           </div>
